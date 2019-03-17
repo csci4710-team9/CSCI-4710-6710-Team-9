@@ -1,54 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!--basic Meta data setup-->
-<meta charset="utf-8">
-	<meta name="Introduction">
+	
 	<meta Author: Logan Jones of Team 9>
 	
-	<title>Logan Jones' Webpage</title>
+	<title>HydroQuality</title>
+	<!--
+		<link href="local_style.css" rel="stylesheet" type="text/css">
+	-->
+	<!-- 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	-->
 
-	<!--this is how the style is set up -->
-	<style>
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
+<style>
+        body {
+            background-color: floralwhite;
+        }
 
-		background-color: #FDE74C;
-	}
-	li {
-		float: left;
-	}
+        h1 {
+            color: blue;
+        }
 
-	li a{
-		display: block;
-		color: #E55934;
-		text-align: center;
-		padding: 14px 16px;
+        p {
+            color: blue;
+        }
 
-		text-decoration: none;
-	}
+        span1{
+            color: blue;
+        }
+        span {
+            color: green;
+        }
 
-	li a:hover {
-		background-color: #9BC53D;
-	}
-</style>
-</head>
-<!-- sets back ground color-->
-<body bgcolor="#5BC0EB">
-<!-- enables the abiliity to link with other pages-->
-<ul>
-		<li><a <a class="active" href="HW5_Front_Page.html">Uploads</a></li>
-		<li><a href=".html">Verify</a>
-		<li><a href=".html">Configure</a>
-		<li><a href=".html">Run Tests</a>
-		<li><a href=".html">Review</a>
+		#button_1 {
+  			width: 350px;
+ 			height: 170px;
+  			padding: 10px;
+ 			border: 1px solid #aaaaaa;
+ 			display: flex;
+  			align-items: center;
+  			justify-content: center;
+  			text-align:  center;
+		}
 		
-	</ul>
+}
+		
+</style>
+<!--basic Meta data setup-->
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <!-- script from w3 schoolss to enable drag and drop features-->
+    <script>
+	function allowDrop(ev) {
+  	ev.preventDefault();
+}
+
+	function drag(ev) {
+  	ev.dataTransfer.setData("text", ev.target.id);
+}
+
+	function drop(ev) {
+ 	ev.preventDefault();
+  	var data = ev.dataTransfer.getData("text");
+  	ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+<!-- enables the abiliity to link with other pages-->
+	<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  		<a class="navbar-brand" href="#">HYDRO-Quality</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+  		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    	<a class="nav-item nav-link active" href="index.html">
+	    		Uploads <span class="sr-only">(current)</span>
+	    	</a>
+      		<span class="nav-item nav-link">Verify</span>
+      		<span class="nav-item nav-link">Configure</span>
+      		<span class="nav-item nav-link">Run Tests</span>
+      		<span class="nav-item nav-link">Review</span>
+	  	</div>
+	</nav>
+	--> 
+	 <h1><b><span1>HYDRO</span><span>QUALITY</span></b></h1>
+    
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#"></a></li>
+                <li><a href="#"><span>UPLOAD</span> ></a></li>
+                <li><a href="#">VERIFY ></a></li>
+                <li><a href="#">CONFIGURE></a></li>
+                <li><a href="#">RUN TESTS  ></a></li>
+                <li><a href="#">REVIEW   ></a></li>
+            </ul>
+        </div>
+    </nav>
+	<!-- Drag and drop features learned from w3 schools-->
+	<div id="button_1" ondrop="drop(event)" ondragover="allowDrop(event)">Drag and drop .CSV files here</div>
+	<!-- button to select .csv files for the verify page-->
+	<button type= button href = "button_2">Selcet a .CSV file</button>
 	<!-- Button To next page-->
-	<button type= button onclick="window.location.href = 'htmlpage';">Continue</button>
+	<button type= button href = "button_3">Continue</button>
 
 </body>
 </html>
