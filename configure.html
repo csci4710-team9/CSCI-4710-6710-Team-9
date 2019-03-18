@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>hw5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: floralwhite;
+        }
+
+        h1 {
+            color: Blue;
+        }
+
+        p {
+            color: black;
+        }
+
+        span1 {
+            color: Blue;
+        }
+
+        span {
+            color: green;
+        }
+
+        /* Create three unequal columns that floats next to each other */
+        .column {
+            float: left;
+            padding: 10px;
+            height: 300px;
+        }
+
+        .left {
+            width: 25%;
+        }
+
+        .right {
+            width: 45%;
+        }
+
+        .middle {
+            width: 30%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+    </style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body class="">
+    <h1><b><span1>HYDRO</span><span>QUALITY</span></b></h1>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">UPLOAD ></a></li>
+                <li><a href="verify.html">VERIFY ></a></li>
+                <li><a href="configure.html"><span>CONFIGURE ></span></a></li>
+                <li><a href="run_test.html">RUN TESTS  ></a></li>
+                <li><a href="review.html">REVIEW   ></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron">
+
+            <div class="row">
+                <div class="column left" style="background-color:#fff;">
+                	<label>Data Fields</label>
+                    <form>
+    					<div class="form-group">
+
+     					 <select multiple class="form-control" id="sel2">
+        					  <option>DataValue1</option>
+       					  	<option>DataValue2</option>
+        					  <option>DataValue3</option>
+        					  <option>DataValue4</option>
+       	  					<option>DataValue5</option>
+      					</select>
+    					</div>
+  					</form>
+                </div>
+
+
+                <div class="column middle" style="background-color:#bbb;">
+                    <label>Data Field Metadata</label>
+                    <form>
+    				<div class="form-group">
+      					<textarea class="form-control" rows="10" id="comment"></textarea>
+   				    </div>
+  					</form>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-info" data-toggle="modal" data- target="#exampleModalForm">
+                        Modify Metadata
+                    </button>
+
+                    <div class="modal fade" id="exampleModalForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Meta Data</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label">Filename:</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message-text" class="col-form-label">Comments:</label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column right" style="background-color:#ccc;">
+                	<label>QC Tests</label>
+                    <form>
+    				<div class="form-group">
+      					<textarea class="form-control" rows="10" id="comment"></textarea>
+   				    </div>
+  					</form>
+
+                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Add Test
+</button>
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalGrid">
+  Modify Test
+</button>
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalForm">
+  Remove Test
+</button>
+
+
+
+<br><br><br><br>
+<!-- Button To next page-->
+	<button type= button class = "button_3">Continue ></button>
+
+
+</body></html>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
