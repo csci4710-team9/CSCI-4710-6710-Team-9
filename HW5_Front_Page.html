@@ -8,19 +8,10 @@
 	<!--
 		<link href="local_style.css" rel="stylesheet" type="text/css">
 	-->
-	<!-- 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-	</script>
-	-->
+	<!--basic Meta data setup-->
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
 <style>
         body {
@@ -43,23 +34,46 @@
         }
 
 		#button_1 {
-  			width: 350px;
- 			height: 170px;
+			margin: auto;
+  			width: 750px;
+ 			height: 450px;
   			padding: 10px;
  			border: 1px solid #aaaaaa;
  			display: flex;
   			align-items: center;
   			justify-content: center;
-  			text-align:  center;
+  			text-align: center;
+  			font-size: 48px;
 		}
-		
-}
-		
+		.button_2 {
+			background-color: #4CAF50;
+  			border: none;
+ 	 		color: white;
+  			padding: 20px 32px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			margin: 8px 4px;
+  			cursor: pointer;
+  			font-size: 18px;
+		}
+		.button_3 {
+			background-color: #4CAF50;
+  			border: none;
+ 	 		color: white;
+  			padding: 20px 32px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			margin: 8px 4px;
+  			cursor: pointer;
+  			font-size: 18px;
+		}
+		div.Middle {
+  		text-align: center;
+  		}
 </style>
-<!--basic Meta data setup-->
-<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
    <!-- script from w3 schoolss to enable drag and drop features-->
     <script>
 	function allowDrop(ev) {
@@ -78,25 +92,7 @@
 </script>
 </head>
 <body>
-<!-- enables the abiliity to link with other pages-->
-	<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  		<a class="navbar-brand" href="#">HYDRO-Quality</a>
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-  		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
-  		</button>
 
-	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    	<a class="nav-item nav-link active" href="index.html">
-	    		Uploads <span class="sr-only">(current)</span>
-	    	</a>
-      		<span class="nav-item nav-link">Verify</span>
-      		<span class="nav-item nav-link">Configure</span>
-      		<span class="nav-item nav-link">Run Tests</span>
-      		<span class="nav-item nav-link">Review</span>
-	  	</div>
-	</nav>
-	--> 
 	 <h1><b><span1>HYDRO</span><span>QUALITY</span></b></h1>
     
     <nav class="navbar navbar-default">
@@ -104,7 +100,6 @@
             <div class="navbar-header">
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#"></a></li>
                 <li><a href="#"><span>UPLOAD</span> ></a></li>
                 <li><a href="#">VERIFY ></a></li>
                 <li><a href="#">CONFIGURE></a></li>
@@ -113,12 +108,17 @@
             </ul>
         </div>
     </nav>
+<div class="Middle">
+<h2>Welcome to the HydroQuality client</h2>
+
+<p>This is filler text to be replaced for when we have real information <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+</p>
 	<!-- Drag and drop features learned from w3 schools-->
-	<div id="button_1" ondrop="drop(event)" ondragover="allowDrop(event)">Drag and drop .CSV files here</div>
+	<div id="button_1" ondrop="drop(event)" ondragover="allowDrop(event)">Drag and drop a .CSV files here</div>
 	<!-- button to select .csv files for the verify page-->
-	<button type= button href = "button_2">Selcet a .CSV file</button>
+	<button type= button class = "button_2">Selcet a .CSV file</button>
 	<!-- Button To next page-->
-	<button type= button href = "button_3">Continue</button>
+	<button type= button class = "button_3">Continue</button>
 
 </body>
 </html>
