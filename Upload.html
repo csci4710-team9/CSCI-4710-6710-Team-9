@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta Author: Logan Jones of Team 9>
+	
+	<title>HydroQuality</title>
+	<!--
+		<link href="local_style.css" rel="stylesheet" type="text/css">
+	-->
+	<!--basic Meta data setup-->
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<style>
+        body {
+            background-color: floralwhite;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        p {
+            color: blue;
+        }
+
+        span1{
+            color: blue;
+        }
+        span {
+            color: green;
+        }
+
+		#button_1 {
+			margin: auto;
+  			width: 750px;
+ 			height: 450px;
+  			padding: 10px;
+ 			border: 1px solid #aaaaaa;
+ 			display: flex;
+  			align-items: center;
+  			justify-content: center;
+  			text-align: center;
+  			font-size: 48px;
+		}
+		.button_2 {
+			background-color: #4CAF50;
+  			border: none;
+ 	 		color: white;
+  			padding: 20px 32px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			margin: 8px 4px;
+  			cursor: pointer;
+  			font-size: 18px;
+		}
+		.button_3 {
+			background-color: #4CAF50;
+  			border: none;
+ 	 		color: white;
+  			padding: 20px 32px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			margin: 8px 4px;
+  			cursor: pointer;
+  			font-size: 18px;
+		}
+		div.Middle {
+  		text-align: center;
+  		}
+</style>
+
+   <!-- script from w3 schoolss to enable drag and drop features-->
+    <script>
+	function allowDrop(ev) {
+  	ev.preventDefault();
+}
+
+	function drag(ev) {
+  	ev.dataTransfer.setData("text", ev.target.id);
+}
+
+	function drop(ev) {
+ 	ev.preventDefault();
+  	var data = ev.dataTransfer.getData("text");
+  	ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+	 <h1><b><span1>HYDRO</span><span>QUALITY</span></b></h1>
+    
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#"><span>UPLOAD</span> ></a></li>
+                <li><a href="#">VERIFY ></a></li>
+                <li><a href="#">CONFIGURE></a></li>
+                <li><a href="#">RUN TESTS  ></a></li>
+                <li><a href="#">REVIEW   ></a></li>
+            </ul>
+        </div>
+    </nav>
+<div class="Middle">
+<h2>Welcome to the HydroQuality client</h2>
+
+<p>This is filler text to be replaced for when we have real information <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+</p>
+	<!-- Drag and drop features learned from w3 schools-->
+	<div id="button_1" ondrop="drop(event)" ondragover="allowDrop(event)">Drag and drop a .CSV files here</div>
+	<!-- button to select .csv files for the verify page-->
+	<button type= button class = "button_2">Selcet a .CSV file</button>
+	<!-- Button To next page-->
+	<button type= button class = "button_3">Continue</button>
+
+</body>
+</html>
