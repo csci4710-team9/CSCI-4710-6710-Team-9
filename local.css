@@ -1,0 +1,54 @@
+        body {
+            background-color: floralwhite;
+        }
+        h1 {
+            color: blue;
+        }
+        p {
+            color: blue;
+        }
+        span1{
+            color: blue;
+        }
+        span {
+            color: green;
+        }
+		.drag_drop {
+			margin: auto;
+  			width: 750px;
+ 			height: 450px;
+  			padding: 10px;
+ 			border: 1px solid #aaaaaa;
+ 			display: flex;
+  			align-items: center;
+  			justify-content: center;
+  			text-align: center;
+  			font-size: 48px;
+		}
+		.button_2 {
+			background-color: #4CAF50;
+  			border: none;
+ 	 		color: white;
+  			padding: 20px 32px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			margin: 8px 4px;
+  			cursor: pointer;
+  			font-size: 18px;
+		}
+		.button_3 {
+			background-color: #4CAF50;
+  			border: none;
+ 	 		color: white;
+  			padding: 20px 32px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			margin: 8px 4px;
+  			cursor: pointer;
+  			font-size: 18px;
+		}
+		div.Middle {
+  		text-align: center;
+  		}

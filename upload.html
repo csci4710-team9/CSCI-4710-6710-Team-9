@@ -1,0 +1,20 @@
+{% extends "frame.html" %}
+{% block content %}
+    <div class="container mx-auto">
+        <h2 class="text-center">Welcome to the HydroQuality client</h2>
+
+        <p class="text-center">This is filler text to be replaced for when we have real information <br> Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.
+            Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+        </p>
+        <form id="my_dropzone" action="/" method='post' class="dropzone">
+            <div class="dz-default dz-message">
+                <span>Drop a csv file here to upload</span>
+            </div>
+        </form>
+        <form method=post enctype=multipart/form-data>
+            <input type=file name=file>
+            <input type=submit value=Upload>
+        </form>
+    </div>
+{% endblock %}
